@@ -24,7 +24,7 @@ export default () => {
   const sideMetadata = useStaticQuery(graphql`
     query TitleQuery {
       site {
-        slider {
+        sliderData {
           slide1
           slideP1
           slide2
@@ -36,7 +36,7 @@ export default () => {
     }
   `)
 
-  let {slide1, slideP1, slide2, slideP2, slide3, slideP3} = sideMetadata.site.slider
+  let {slide1, slideP1, slide2, slideP2, slide3, slideP3} = sideMetadata.site.sliderData
   return (
     <SliderContainer>
       <Slider {...settings}>
