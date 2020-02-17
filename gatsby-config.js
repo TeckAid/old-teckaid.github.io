@@ -11,8 +11,6 @@ module.exports = {
     fax: '000-000-0000',
     address: 'Sugar Land, TX 77479',
     email: 'hello@teckaid.com',
-  },
-  sliderData: {
     slide1: 'Let us do the heavy lifting for your brand.',
     slideP1: 'Test this P1',
     slide2: 'We wil do the heavy lifting for your brand.',
