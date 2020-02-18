@@ -5,12 +5,11 @@ import Link from '../components/link'
 import Button from '../components/btn'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaGithub } from 'react-icons/fa'
 import Form from '../components/form'
 import Slider from '../components/slider'
 import Box from '../components/box'
 import Hr from '../components/hr'
-import { FaHome } from 'react-icons/fa';
+import { FaAmazon, FaBuysellads, FaShieldAlt, FaRegEnvelopeOpen } from 'react-icons/fa';
 import Benefits from '../components/benefits'
 import styled from 'styled-components'
 
@@ -35,21 +34,21 @@ export default () => (
     <Slider/>
     <Container className="pt-4">
       <div className="text-center">
-        <h4>A slightly opinionated Gatsby starter template.</h4>
-        <p className="text-muted">Built with love on the Gold Coast, QLD Australia</p>
+        <h4>Build a Successful Brand on Amazon.</h4>
+        <p className="text-muted">We take pride in our work to help your products  and brand reach a wider audience.  We also provide a full range of services that  extend beyond just product listing and amazon PPC marketing. Since we’re among one of the largest of Amazon sellers. We understand the ecosystem better then anyone.  We have helped over 100 brands take control of the Amazon channel, improve their positioning, and grow sales. Our data driven methods, have proved to our suppliers, and partners  that we mean results. See below, why we’re the partner you business needs to improve your Amazon presence. </p>
       </div>
     </Container>
     <Container className="py-5">
       <h2 className="text-center mb-4">Services</h2>
       <Row>
-        <Service title="Manage Listing" Icon={FaHome}/>
-        <Service title="PPC Management" Icon={FaHome}/>
-        <Service title="Brand Protection" Icon={FaHome}/>
+        <Service title="Manage Listing" Icon={FaAmazon}/>
+        <Service title="PPC Management" Icon={FaBuysellads}/>
+        <Service title="Brand Protection" Icon={FaShieldAlt}/>
       </Row>
     </Container>
     <div className="text-center py-5">
-      <Button to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary btn-lg">
-        <FaGithub className="mr-1"/>
+      <Button to="/contact" className="btn btn-primary btn-lg">
+        <FaRegEnvelopeOpen className="mr-1"/>
         Contact Us
       </Button>
     </div>
@@ -60,7 +59,7 @@ export default () => (
           <Row className="d-flex justify-content-center">
             <Col md={8}>
               <Box style={{textAlign: 'left'}}>
-                <h3 className="text-center">Reactstrap Form Fields</h3>
+                <h3 className="text-center">Take Action Now, Contact Us!</h3>
                 <Hr/>
                 <Form/>
               </Box>

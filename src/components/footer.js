@@ -61,8 +61,8 @@ export default () => (
         </Col>
         <Col>
           <h5>Contact Us</h5>
-          <SocialLink Icon={FaFacebookSquare}/>
-          <SocialLink Icon={FaInstagram}/>
+          <SocialLink to="/" Icon={FaFacebookSquare}/>
+          <SocialLink to="/" Icon={FaInstagram}/>
         </Col>
       </Row>
     </Container>
