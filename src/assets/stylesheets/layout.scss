@@ -1,0 +1,45 @@
+$gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
+
+// Bootstrap 5 - Import the full library
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/// Typography
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/HKGrotesk-Bold.woff2') format("woff2"), url('../fonts/HKGrotesk-Bold.woff') format("woff");;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/HKGrotesk-ExtraBold.woff2') format("woff2"), url('../fonts/HKGrotesk-ExtraBold.woff') format("woff");;
+  font-display: swap;
+}
+
+body {
+  font-family: 'HKGrotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "HKGrotesk";
+  font-weight: 500
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  .text-muted {
+    color: #869ab8;
+  }
+}
+
+.bg-primary-faded {
+  color: $primary;
+  background-color: rgba($primary, 0.2);
+}
