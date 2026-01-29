@@ -40,6 +40,18 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: `AI automation, small business automation, ChatGPT business solutions, SOP automation, workflow automation, Houston AI services, Dallas AI automation, Austin business automation, San Antonio AI consulting, cost reduction automation, AI customer service, business process automation Texas`,
+        },
+        {
+          name: `geo.region`,
+          content: `US-TX`,
+        },
+        {
+          name: `geo.placename`,
+          content: `Houston, Dallas, Austin, San Antonio`,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -50,6 +62,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:locale`,
+          content: `en_US`,
         },
         {
           name: `twitter:card`,

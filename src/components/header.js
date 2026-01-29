@@ -16,13 +16,13 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="light" light expand="md">
-      <Container>
-        <Link to="/" className="navbar-brand">
+    <Navbar color="light" light expand="md" className="py-3">
+      <Container className="d-flex align-items-center">
+        <Link to="/" className="navbar-brand mb-0">
           <img src={logo} alt="TeckAid" height="25px"/>
         </Link>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <NavbarToggler onClick={toggle} className="ms-auto" />
+        <Collapse isOpen={isOpen} navbar className="justify-content-end">
           <Navigation json={navigation} link={Link}/>
         </Collapse>
       </Container>

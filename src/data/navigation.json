@@ -1,9 +1,11 @@
 [
-  {"name": "What We Do", "url": "", "dropdownItems": [
-    {"name": "Amazon Product Management", "url": "/test"},
-    {"name": "Amazon PPC Optimizaton", "url": "/test"},
-    {"name": "Brand Protection", "url": "/test"}
+  {"name": "Services", "url": "", "dropdownItems": [
+    {"name": "SOP Automation", "url": "/sop-automation"},
+    {"name": "AI Customer Service", "url": "/ai-customer-service"},
+    {"name": "Workflow Integration", "url": "/workflow-integration"},
+    {"name": "Cost Reduction Analysis", "url": "/cost-reduction-analysis"}
   ]},
+  {"name": "AI Tools", "url": "/#business-tools"},
   {"name": "Contact Us", "url": "/contact"},
   {"name": "About Us", "url": "/aboutus"}
 ]

@@ -1,74 +1,87 @@
 let facebook_pixel = ''
 let gtm = ''
 
+const plugins = [
+  `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-sass`,
+  `gatsby-plugin-image`,
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/assets/images`,
+    },
+  },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `TeckAid - AI Automation Services`,
+      short_name: `TeckAid`,
+      start_url: `/`,
+      background_color: `#ffffff`,
+      theme_color: `#0066cc`,
+      display: `minimal-ui`,
+      icon: `src/assets/images/teckaidfav.png`,
+    }
+  },
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
+  // {
+  //   resolve: `gatsby-source-strapi`,
+  //   options: {
+  //     apiURL: `http://localhost:1337`,
+  //     queryLimit: 1000, // Default to 100
+  //     contentTypes: ['article'],
+  //     // Possibility to login with a strapi user, when content types are not publically available (optional).
+  //     loginData: {
+  //       identifier: "",
+  //       password: "",
+  //     },
+  //   },
+  // },
+  `gatsby-plugin-sitemap`,
+  'gatsby-plugin-robots-txt',
+  `gatsby-plugin-netlify`,
+  `gatsby-plugin-styled-components`
+]
+
+// Conditionally add Google Tag Manager if ID is provided
+if (gtm) {
+  plugins.push({
+    resolve: 'gatsby-plugin-google-tagmanager',
+    options: {
+      id: gtm,
+      includeInDevelopment: false
+    }
+  })
+}
+
+// Conditionally add Facebook Pixel if ID is provided
+if (facebook_pixel) {
+  plugins.push({
+    resolve: `gatsby-plugin-facebook-pixel`,
+    options: {
+      pixelId: facebook_pixel,
+    }
+  })
+}
+
 module.exports = {
   siteMetadata: {
     title: `TeckAid`,
-    description: `Multi-Channel eCommerce brand and product management services.`,
+    description: `AI automation workflows for small and mid-size businesses in Houston, Dallas, Austin, and San Antonio. Transform your business with custom AI solutions.`,
     author: `Nasir Ali`,
     siteUrl: `https://teckaid.com/`,
-    phone: '832-856-3488',
+    phone: '281-201-0151',
     fax: '000-000-0000',
     address: 'Houston, TX',
     email: 'hello@teckaid.com',
-    slide1: 'Grow Your Brand With Multichannel Selling.',
-    slideP1: 'Data-Driven Product Placement, SEO Content Performance & Strategic Global Distribution',
-    slide2: 'Selling Private Label Brand? We Can Help!',
-    slideP2: 'Place your products on Amazon, Walmart, eBay, Etsy, Google Shopping and more.',
-    slide3: 'Let us do the heavy lifting for your business.',
-    slideP3: 'Optimization, Product Ranking, Brand Monitoring, & Account Growth Management',
+    slide1: 'Transform Your Business with AI Automation',
+    slideP1: 'Custom AI workflows for Texas businesses. Automate repetitive tasks and free your team to focus on growth.',
+    slide2: 'Cut Operational Costs by Up to 40%',
+    slideP2: 'Smart automation solutions using ChatGPT, Claude, and custom integrations. Reduce labor costs while improving efficiency.',
+    slide3: 'Custom AI Solutions Built for Your Business',
+    slideP3: 'No complexity, no jargon, just results. Texas-based team serving Houston, Dallas, Austin, and San Antonio.',
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: gtm,
-        includeInDevelopment: false
-      }
-    },
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: facebook_pixel,
-      }
-    },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './src/assets/images/teckaidfav.png'
-      }
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-source-strapi`,
-    //   options: {
-    //     apiURL: `http://localhost:1337`,
-    //     queryLimit: 1000, // Default to 100
-    //     contentTypes: ['article'],
-    //     // Possibility to login with a strapi user, when content types are not publically available (optional).
-    //     loginData: {
-    //       identifier: "",
-    //       password: "",
-    //     },
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
-    'gatsby-plugin-robots-txt',
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cache`,
-    `gatsby-plugin-styled-components`
-  ],
+  plugins
 }

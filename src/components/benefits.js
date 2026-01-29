@@ -2,14 +2,14 @@ import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import { FaRocket, FaCogs} from 'react-icons/fa'
 import { StaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image/withIEPolyfill'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
-let StyledImg = styled(props => <Img {...props}/>)`
+let StyledImg = styled(GatsbyImage)`
   perspective: 1500px;
   perspective-origin: left center;
   overflow: visible !important;
-  picture, img {
+  img {
     transform: rotateY(-35deg) rotateX(15deg);
     box-shadow: 25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2);
     border-radius: .625rem;
@@ -30,23 +30,26 @@ let Benefit = ({Icon, title, content}) => (
   </div>
 )
 
-let Benefits = ({data}) => (
-  <Container className="py-5">
-    <Row className="d-flex align-items-center">
-      <Col md="6">
-        <div className="mb-4">
-          <h2 className="text-primary">Ready to take your brand on Amazon?</h2>
-          <p className="text-muted">Achieve better and faster results. We can help.</p>
-        </div>
-        <Benefit Icon={FaRocket} title="Growth Management" content="TeckAid team will be your principal counselor, lend our expertise for growing on Amazon, helping your business use various Amazon solutions to fit your goals."/>
-        <Benefit Icon={FaCogs} title="Proven Formula" content="TeckAid will identify strategic ways to increase revenue, reach new customers base and make confident action plan to drive powerful results."/>
-      </Col>
-      <Col md="6">
-        <StyledImg fluid={data.file.childImageSharp.fluid} objectFit="contain" objectPosition="50% 50%"/>
-      </Col>
-    </Row>
-  </Container>
-)
+let Benefits = ({data}) => {
+  const image = getImage(data.file)
+  return (
+    <Container className="py-5">
+      <Row className="d-flex align-items-center">
+        <Col md="6">
+          <div className="mb-4">
+            <h2 className="text-primary">Ready to Transform Your Business with AI?</h2>
+            <p className="text-muted">Cut costs and boost efficiency with practical automation solutions.</p>
+          </div>
+          <Benefit Icon={FaRocket} title="Fast AI Implementation" content="We help Texas businesses deploy AI automation workflows that save 5-10 hours per employee per week. Start seeing results within weeks, not months."/>
+          <Benefit Icon={FaCogs} title="Custom Workflow Solutions" content="Your business is unique. We build tailored AI solutions using ChatGPT, Claude, and proven automation platforms—no vendor lock-in, complete training included."/>
+        </Col>
+        <Col md="6">
+          <StyledImg image={image} alt="AI Automation Services" objectFit="contain" objectPosition="50% 50%"/>
+        </Col>
+      </Row>
+    </Container>
+  )
+}
 
 export default () => (
   <StaticQuery
@@ -55,9 +58,11 @@ export default () => (
         file(relativePath: {eq: "ppcmarketing.png"}) {
           id
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }

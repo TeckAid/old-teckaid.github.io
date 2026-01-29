@@ -41,28 +41,39 @@ export default () => (
   <Footer>
     <Container>
       <Row>
-        <Col>
-          <h5>Features</h5>
+        <Col md={6} lg={3}>
+          <h5>AI Automation Services</h5>
           <ul>
-            <FooterLink to="/">Marketplace Product Listing</FooterLink>
+            <FooterLink to="/#services">SOP Automation</FooterLink>
+            <FooterLink to="/#services">AI Customer Service</FooterLink>
+            <FooterLink to="/#services">Workflow Integration</FooterLink>
+            <FooterLink to="/#services">Cost Reduction Analysis</FooterLink>
           </ul>
         </Col>
-        <Col>
-          <h5>Partnership</h5>
+        <Col md={6} lg={3}>
+          <h5>Business Tools</h5>
           <ul>
-            <FooterLink to="/">Become a Partner</FooterLink>
+            <FooterLink to="/#business-tools">AI Platforms</FooterLink>
+            <FooterLink to="/#business-tools">CRM Solutions</FooterLink>
+            <FooterLink to="/#business-tools">Accounting Software</FooterLink>
+            <FooterLink to="/#business-tools">Project Management</FooterLink>
           </ul>
         </Col>
-        <Col>
-          <h5>Case Studies</h5>
+        <Col md={6} lg={3}>
+          <h5>Company</h5>
           <ul>
-            <FooterLink to="/">Growth on Amazon</FooterLink>
+            <FooterLink to="/aboutus">About Us</FooterLink>
+            <FooterLink to="/contact">Contact</FooterLink>
           </ul>
         </Col>
-        <Col>
-          <h5>Contact Us</h5>
-          <SocialLink to="/" Icon={FaFacebookSquare}/>
-          <SocialLink to="/" Icon={FaInstagram}/>
+        <Col md={6} lg={3}>
+          <h5>Service Areas</h5>
+          <ul>
+            <li>Houston, TX</li>
+            <li>Dallas, TX</li>
+            <li>Austin, TX</li>
+            <li>San Antonio, TX</li>
+          </ul>
         </Col>
       </Row>
     </Container>
