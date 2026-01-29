@@ -5,60 +5,93 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
-/styles.9ba59b8d2b230945f705.css
+/static/HKGrotesk-Bold-b414cb48fbcee01fd869696d9576b606.woff2
   Cache-Control: public, max-age=31536000, immutable
-/styles-722891f2689dee855134.js
+/static/HKGrotesk-Bold-4b8abf359f1a287be96081b985a98be0.woff
   Cache-Control: public, max-age=31536000, immutable
-/commons-6eb4a15d2c828383290d.js
+/static/HKGrotesk-ExtraBold-4c543b3ec016c45dd6052e0dae664e9d.woff2
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-404-js-3aef49d74b125d0f9678.js
+/static/HKGrotesk-ExtraBold-6cda7251b6de3cce3d0e57d7d5b9f209.woff
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-aboutus-js-cbe6b8f055f39debe324.js
+/454-19fbc07d98858126c100.js
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-contact-js-fd7ec179bea6a670b9cc.js
+/styles.73205a4d70a48aeac95c.css
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-index-js-217861faadfc146730d2.js
+/551-c259d8ec9a25364ae138.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-9a6ed8568301fe0a1616.js
+/commons-14dad4bcdf65183cb681.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
-/app-6004db77d8d31401cc0e.js
+/framework-cb93e3f04f78a296ffc9.js.LICENSE.txt
+  Cache-Control: public, max-age=31536000, immutable
+/app-226812eef12d401cd32d.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-f748931023e80d8ffb17.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-82fb2194db24f46f7acf.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-aboutus-js-70c65ebc20dc8b141bb2.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-ai-customer-service-js-cdf24f6c04727f37519d.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-js-7ae8806cc76f7380f835.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-cost-reduction-analysis-js-93678b02a94c88b0961e.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-5c977d7fe843db953d6c.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-sop-automation-js-c6dc052113dce31b3fde.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-workflow-integration-js-66479b394ad08a73e19c.js
+  Cache-Control: public, max-age=31536000, immutable
+/551-c259d8ec9a25364ae138.js
+  Cache-Control: public, max-age=31536000, immutable
+/452-ae43cdd50083589a5dfa.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-cb93e3f04f78a296ffc9.js
+  Cache-Control: public, max-age=31536000, immutable
+/cb355538-a7fd54e4febbc5b5c98a.js
+  Cache-Control: public, max-age=31536000, immutable
+/b48a334c-8e0cedd63a9e98f84a8e.js
+  Cache-Control: public, max-age=31536000, immutable
+/commons-14dad4bcdf65183cb681.js
+  Cache-Control: public, max-age=31536000, immutable
+/d45264a4de1f650f185c596d620c9318dc1eb06b-bfab886a6fe96c742003.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-226812eef12d401cd32d.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-f748931023e80d8ffb17.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-82fb2194db24f46f7acf.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-aboutus-js-70c65ebc20dc8b141bb2.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-ai-customer-service-js-cdf24f6c04727f37519d.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-js-7ae8806cc76f7380f835.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-cost-reduction-analysis-js-93678b02a94c88b0961e.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-5c977d7fe843db953d6c.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-sop-automation-js-c6dc052113dce31b3fde.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-workflow-integration-js-66479b394ad08a73e19c.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/551-c259d8ec9a25364ae138.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/452-ae43cdd50083589a5dfa.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/framework-cb93e3f04f78a296ffc9.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/cb355538-a7fd54e4febbc5b5c98a.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/b48a334c-8e0cedd63a9e98f84a8e.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/commons-14dad4bcdf65183cb681.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/d45264a4de1f650f185c596d620c9318dc1eb06b-bfab886a6fe96c742003.js.map
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable
 /sw.js
   Cache-Control: no-cache
-/404/
-  Link: </webpack-runtime-9a6ed8568301fe0a1616.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </app-6004db77d8d31401cc0e.js>; rel=preload; as=script
-  Link: </styles-722891f2689dee855134.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </component---src-pages-404-js-3aef49d74b125d0f9678.js>; rel=preload; as=script
-/aboutus/
-  Link: </webpack-runtime-9a6ed8568301fe0a1616.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </app-6004db77d8d31401cc0e.js>; rel=preload; as=script
-  Link: </styles-722891f2689dee855134.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </component---src-pages-aboutus-js-cbe6b8f055f39debe324.js>; rel=preload; as=script
-/contact/
-  Link: </webpack-runtime-9a6ed8568301fe0a1616.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </app-6004db77d8d31401cc0e.js>; rel=preload; as=script
-  Link: </styles-722891f2689dee855134.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </component---src-pages-contact-js-fd7ec179bea6a670b9cc.js>; rel=preload; as=script
-/
-  Link: </webpack-runtime-9a6ed8568301fe0a1616.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </app-6004db77d8d31401cc0e.js>; rel=preload; as=script
-  Link: </styles-722891f2689dee855134.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </component---src-pages-index-js-217861faadfc146730d2.js>; rel=preload; as=script
-/404.html
-  Link: </webpack-runtime-9a6ed8568301fe0a1616.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </app-6004db77d8d31401cc0e.js>; rel=preload; as=script
-  Link: </styles-722891f2689dee855134.js>; rel=preload; as=script
-  Link: </commons-6eb4a15d2c828383290d.js>; rel=preload; as=script
-  Link: </component---src-pages-404-js-3aef49d74b125d0f9678.js>; rel=preload; as=script

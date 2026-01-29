@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://teckaid.com/sitemap.xml
+Sitemap: https://teckaid.com/sitemap-index.xml
 Host: https://teckaid.com
