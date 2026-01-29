@@ -39,7 +39,8 @@
     "prettier": "^3.3.3"
   },
   "overrides": {
-    "tmp": "^0.2.4"
+    "tmp": "^0.2.4",
+    "postcss": "^8.4.31"
   },
   "keywords": [
     "gatsby"
