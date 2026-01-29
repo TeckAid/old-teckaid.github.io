@@ -59,7 +59,4 @@
   "bugs": {
     "url": "https://github.com/TeckAid/teckaid.github.io/issues"
   }
-  "overrides": {
-  "cookie": "^0.7.0"
-}
 }
